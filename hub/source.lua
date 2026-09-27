@@ -6,6 +6,10 @@ end
 
 local v = table.pack(...)
 
+		while true do
+		end
+	end
+end
 
 local str = "?"
 loadstring = ce_like_loadstring_fn or loadstring
@@ -1834,6 +1838,7 @@ while true do
 					end
 				else
 					if not flag14 then
+						local function flag14_body()
 						local v84, v85, service, service2, UserInputService, currentCamera, localPlayer, flag18, v86, fn29
 						local fn30, fn31, fn32, lib, tbl17, tbl18, fn33, fn34, fn35, fn36
 						local VirtualInputManager, fn37, fn38, tbl19, tbl20, tbl21, tbl22, fn39, fn40, fn41
@@ -17166,7 +17171,12 @@ while true do
 						end)
 
 						tbl19.Movement:Select()
-						return
+						return true
+					end
+
+						if flag14_body() then
+							return
+						end
 					end
 
 					while true do
